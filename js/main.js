@@ -20,6 +20,16 @@
     
     // Initiate the wowjs
     new WOW().init();
+
+
+    function openLightbox() {
+        document.getElementById('lightbox').style.display = 'block';
+      }
+      
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+      
     
     
     // Back to top button
