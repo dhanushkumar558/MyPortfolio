@@ -10,6 +10,12 @@
         }, 1);
     };
     loader();
+
+    $(document).ready(function () {
+        $('.navbar-nav a').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    });
     
     
     // Initiate the wowjs
