@@ -1208,6 +1208,14 @@ a:focus {
     }
 }
 
+img{
+    cursor: pointer;
+}
+.hero-image img
+{
+    cursor:default; 
+}
+
 .footer{
     margin-top: 50px;
 }
