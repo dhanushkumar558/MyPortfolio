@@ -123,3 +123,16 @@
     
 })(jQuery);
 
+
+//close modal after clicking those links
+document.addEventListener("DOMContentLoaded", function() {
+    var modalLinks = document.querySelectorAll('.modal .modal-body a.btn');
+    modalLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var modal = this.closest('.modal');
+            if (modal) {
+                $(modal).modal('hide'); // Bootstrap 4 jQuery method to close modal
+            }
+        });
+    });
+});
