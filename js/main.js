@@ -11,6 +11,7 @@
     };
     loader();
 
+    //navbar close when the links gets clicked
     $(document).ready(function () {
         $('.navbar-nav a').click(function () {
             $('.navbar-collapse').collapse('hide');
@@ -94,18 +95,8 @@
     }, {offset: '80%'});
 
 
-    // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
-            }
-        }
-    });
+    
+    
     
     
     
