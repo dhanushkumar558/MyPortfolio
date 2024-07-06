@@ -17,25 +17,6 @@
             $('.navbar-collapse').collapse('hide');
         });
     });
-    $(document).ready(function() {
-        // Initialize Isotope
-        var $gallery = $('.gallery').isotope({
-            itemSelector: '.gallery-item',
-            layoutMode: 'fitRows'
-        });
-    
-        // Filter items on button click
-        $('.filter-btn').on('click', function() {
-            var filterValue = $(this).attr('data-filter');
-            $gallery.isotope({ filter: filterValue });
-        });
-    
-        // Optionally initialize Lightbox
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true
-        });
-    });
     
     
     
